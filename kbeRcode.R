@@ -100,8 +100,6 @@ pred4b <- scale(kbeTest[,2:10], center = F, scale = model4$scales)%*%  rig1coef 
 TE4 <- mean( (pred4b - kbeTest$Returns)^2);
 TE4
 
-#Lasso not working
-
 #Principal Component Analysis
 kbeTrain_pca <- prcomp(kbeTrain[,2:10]);  
 round(kbeTrain_pca$sdev,4)
